@@ -26,9 +26,7 @@ def main():
             display_all_tasks()
         elif choice == 3:
             result_update = update_task_input()
-            print(result_update)
             task_id, new_status = result_update
-            print(result_update)
             if task_id is not None:
                 print(task_id, check_id(task_id))
                 update_task(task_id, new_status)
